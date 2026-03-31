@@ -1,0 +1,21 @@
+Service_ID,Name,Category,Description,Location,Cost,Eligibility,Contact,Provider,Source
+1,Meals on Wheels,Health,Meal delivery service for seniors who cannot cook at home,Victoria,Low-cost,Seniors 60+,Phone available,Community Organization,BC211
+2,Better at Home Program,Community Support,Non-medical home support such as cleaning and grocery help,Victoria,Free/Low,Seniors needing support,Phone available,United Way,Government/Community
+3,HandyDART,Transportation,Accessible door-to-door transit service for people with mobility challenges,Victoria,Paid,Mobility limitations,Phone available,BC Transit,BC211
+4,SAFER Program,Housing,Rental assistance program for low-income seniors,BC,Subsidized,Low-income seniors,Online/Phone,BC Housing,Government BC
+5,Seniors Health Clinic,Health,Medical services specialized for senior patients,Victoria,Free,Seniors,Phone available,Island Health,Health Authority
+6,Adult Day Program,Community Support,Day programs with supervision and activities for seniors,Victoria,Paid,Seniors with care needs,Phone available,Health Authority,Community Directory
+7,Community Meals Program,Community Support,Provides free or low-cost group meals for seniors,Victoria,Free,Seniors,Phone available,Community Center,Community Source
+8,Seniors Information Line,Community Support,Information and referral services for seniors,BC,Free,All seniors,211,BC211,BC211
+9,Home Care Services,Health,In-home care including personal care and nursing,Victoria,Public funded,Eligible seniors,Phone available,Island Health,Health Authority
+10,Income Assistance Program,Financial,Financial support for low-income individuals,BC,Free,Low-income residents,Online,Government of BC,Government BC
+11,Senior Peer Support,Community Support,Volunteer-based emotional and social support for seniors,Victoria,Free,Seniors,Phone available,Non-Profit,Community Source
+12,Transportation Access Program,Transportation,Subsidized transportation services for seniors,Victoria,Low-cost,Seniors,Phone available,Non-Profit,Community Source
+13,Assisted Living Services,Housing,Housing with support services for daily living,Victoria,Paid,Seniors,Phone available,Health/Private,Health Authority
+14,Food Bank Program,Financial,Provides free food for individuals facing financial hardship,Victoria,Free,Low-income individuals,Phone available,Food Bank,Community Source
+15,Mental Health Support Line,Health,Phone-based mental health support and counseling,BC,Free,All individuals,Phone available,Health Services,Government/Health
+16,Caregiver Support Program,Community Support,Support and resources for people caring for seniors,BC,Free,Caregivers,Phone available,Non-Profit,Community Source
+17,Seniors Legal Assistance,Safety,Legal advice and support services for seniors,BC,Free,Seniors,Phone available,Legal Aid Org,Government/Legal
+18,Emergency Response Program,Safety,Emergency alert systems for seniors living alone,BC,Paid,Seniors,Phone available,Private Provider,Private
+19,Housing Registry Service,Housing,Helps individuals find affordable housing options,BC,Free,Low-income,Phone available,BC Housing,Government BC
+20,Community Recreation Program,Community Support,Recreational programs and activities for seniors,Victoria,Low-cost,Seniors,Phone available,Community Center,Community Source

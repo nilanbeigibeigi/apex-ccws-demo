@@ -1,0 +1,33 @@
+# ============================================================
+# PATCH FOR app.py — DEPLOYMENT FIX
+# ============================================================
+# Replace lines 115-118 of your current app.py with the block below.
+# This makes the app deployment-safe on Streamlit Cloud:
+#   1. Detects when Ollama is unreachable and disables it gracefully
+#   2. Reduces hang time from 60s to 8s
+#   3. App still works fully — rule-based search becomes the fallback
+# ============================================================
+
+# ---------------- LLM Config ----------------
+# USE_OLLAMA can be overridden via env var (set USE_OLLAMA=false in Streamlit Cloud secrets)
+# Default: disabled in any deployed environment to prevent hangs.
+import os as _os_llm
+
+_deploy_env = (
+    _os_llm.getenv("STREAMLIT_SERVER_HEADLESS", "").lower() == "true"
+    or _os_llm.getenv("STREAMLIT_RUNTIME_ENV") == "cloud"
+    or _os_llm.getenv("HOSTNAME", "").startswith("streamlit")
+)
+USE_OLLAMA = _os_llm.getenv("USE_OLLAMA", "false" if _deploy_env else "true").lower() == "true"
+OLLAMA_URL = _os_llm.getenv("OLLAMA_URL", "http://localhost:11434/api/chat")
+OLLAMA_MODEL = _os_llm.getenv("OLLAMA_MODEL", "llama3.2:3b")
+
+
+# ============================================================
+# AND find the `requests.post(...)` call inside call_ollama_chat
+# (around line 527) — change the timeout from 60 to 8:
+#
+#   response = requests.post(OLLAMA_URL, json=payload, timeout=8)
+#
+# That's it. Two small changes.
+# ============================================================
